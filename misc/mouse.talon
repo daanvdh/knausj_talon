@@ -23,7 +23,7 @@ midclick:
 #control
 #option = alt
 #shift
-#super = windows key
+super = windows key
 <user.modifiers> touch: 
 	key("{modifiers}:down")
 	mouse_click(0)
