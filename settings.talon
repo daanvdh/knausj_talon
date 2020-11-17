@@ -3,7 +3,7 @@ settings():
     #adjust the scale of the imgui to my liking
     imgui.scale = 1.3
     # enable if you'd like the picker gui to automatically appear when explorer has focus
-    user.file_manager_auto_show_pickers = 0
+    user.file_manager_auto_show_pickers = 1
     #set the max number of command lines per page in help
     user.help_max_command_lines_per_page = 50
     # set the max number of contexts display per page in help
