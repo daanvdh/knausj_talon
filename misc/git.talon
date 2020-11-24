@@ -2,6 +2,7 @@ tag: terminal
 and tag: user.git
 -
 # Standard commands
+git add all: "git add -A\n"
 git add patch: "git add . -p\n"
 git add: "git add "
 git add everything: "git add -u\n"
@@ -16,6 +17,7 @@ git checkout <user.text>: "git checkout {text}"
 git cherry pick: "git cherry-pick "
 git clone: "git clone "
 git commit message <user.text>: "git commit -m '{text}'"
+git commit amend: "git commit --amend --no-edit\n"
 git commit: "git commit\n"
 git diff (colour|color) words: "git diff --color-words "
 git diff: "git diff "
