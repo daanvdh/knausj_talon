@@ -24,7 +24,10 @@ class win_actions:
         # if title == "":
         #    title = ui.active_window().doc
 
-        result = title.split(" - ")[1]
+        if " - " in title:
+            result = title.split(" - ")[1]
+        else:
+            result = title
 
         if "." in result:
             return result
