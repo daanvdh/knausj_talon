@@ -120,7 +120,7 @@ formatters_dict = {
     "PUBLIC_CAMEL_CASE": (NOSEP, every_word(lambda w: w.capitalize())),
     "SNAKE_CASE": (
         NOSEP,
-        first_vs_rest(lambda w: w.lower(), lambda w: "_" + w.lower()),
+        first_vs_rest(lambda w: w.upper(), lambda w: "_" + w.upper()),
     ),
     "NO_SPACES": (NOSEP, every_word(lambda w: w)),
     "DASH_SEPARATED": words_with_joiner("-"),
