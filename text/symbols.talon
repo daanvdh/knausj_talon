@@ -9,7 +9,7 @@ triple quote: "'''"
 ellipses: "..."
 (comma and | spamma): ", "
 plus: "+"
-arrow: "->"
+#arrow: "->" False positives with 'air'
 dub arrow: "=>"
 new line: "\\n"
 carriage return: "\\r"
