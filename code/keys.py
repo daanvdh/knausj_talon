@@ -120,7 +120,8 @@ ctx.lists["self.symbol_key"] = {
     "`": "`",
     "comma": ",",
     ",": ",",
-    "dot": ".",
+#     "dot": ".",
+    "point": ".",
     "period": ".",
     "semi": ";",
     "semicolon": ";",
@@ -202,8 +203,8 @@ simple_keys = [
 ]
 
 alternate_keys = {
-    "delete": "backspace",
-    "forward delete": "delete",
+    "back": "backspace",
+    "delete": "delete",
     #'junk': 'backspace',
 }
 keys = {k: k for k in simple_keys}
