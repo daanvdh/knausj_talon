@@ -32,7 +32,6 @@ class win_actions:
         if "." in result:
             return result
 
-        print(result)
         return ""
 
     def file_ext():
@@ -58,12 +57,22 @@ class edit_actions:
         actions.key("ctrl-l")
         actions.insert(str(n))
         actions.key("enter")
-
+        
     def delete_line():
         actions.key("ctrl-d")
 
+
 @ctx.action_class("user")
 class user_actions:
+            
+    def jump_back():
+        actions.key("alt-left")
+
+    def jump_forward():
+        actions.key("alt-right")
+                
+    def go_inside():
+        actions.key("f3")
     # snippet.py support beginHelp close
     # def snippet_search(text: str):
     #     actions.user.vscode("Insert Snippet")
@@ -172,6 +181,6 @@ class user_actions:
         actions.edit.find(text)
         actions.sleep("100ms")
         actions.key("alt-f alt-o esc")
-        
+
     # find_and_replace.py support end
 
