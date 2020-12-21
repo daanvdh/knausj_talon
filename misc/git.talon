@@ -45,7 +45,7 @@ and tag: user.git
 (git|get) push: "git push\n"
 (git|get) push origin: "git push origin "
 (git|get) push up stream origin: "git push -u origin"
-(git|get) push set up stream: "git push --set-upstream origin "
+(git|get) push set upstream: "git push --set-upstream origin "
 (git|get) push <user.text>: "git push {text} "
 (git|get) push tags: "git push --tags\n"
 (git|get) rebase: "git rebase\n"
