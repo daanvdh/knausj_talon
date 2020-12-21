@@ -59,6 +59,8 @@ class edit_actions:
         actions.insert(str(n))
         actions.key("enter")
 
+    def delete_line():
+        actions.key("ctrl-d")
 
 @ctx.action_class("user")
 class user_actions:
@@ -169,7 +171,7 @@ class user_actions:
     def select_next_occurrence(text: str):
         actions.edit.find(text)
         actions.sleep("100ms")
-        actions.key("alt-f alt-o enter esc")
-
+        actions.key("alt-f alt-o esc")
+        
     # find_and_replace.py support end
 
