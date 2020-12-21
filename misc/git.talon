@@ -59,6 +59,8 @@ and tag: user.git
 (git|get) reset hard: "git reset --hard "
 (git|get) restore: "git restore "
 (git|get) restore staged: "git restore --staged "
+(git|get) resolve keep theirs: "git checkout --theirs ."
+(git|get) resolve keep ours: "git checkout --ours ."
 (git|get) remote show origin: "git remote show origin\n"
 (git|get) add upstream: "git remote add upstream "
 (git|get) show: "git show "
