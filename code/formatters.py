@@ -120,6 +120,10 @@ formatters_dict = {
     "PUBLIC_CAMEL_CASE": (NOSEP, every_word(lambda w: w.capitalize())),
     "SNAKE_CASE": (
         NOSEP,
+        first_vs_rest(lambda w: w.lower(), lambda w: "_" + w.lower()),
+    ),
+    "SNAKE_CASE_UPPER": (
+        NOSEP,
         first_vs_rest(lambda w: w.upper(), lambda w: "_" + w.upper()),
     ),
     "NO_SPACES": (NOSEP, every_word(lambda w: w)),
@@ -166,6 +170,7 @@ formatters_words = {
     "slasher": formatters_dict["SLASH_SEPARATED"],
     "smash": formatters_dict["NO_SPACES"],
     "snake": formatters_dict["SNAKE_CASE"],
+    "big snake": formatters_dict["SNAKE_CASE_UPPER"],
     # "speak": formatters_dict["NOOP"],
     "string": formatters_dict["SINGLE_QUOTED_STRING"],
     "title": formatters_dict["CAPITALIZE_ALL_WORDS"],
