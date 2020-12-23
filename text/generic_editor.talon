@@ -211,5 +211,26 @@ cut line:
     edit.select_line()
     edit.cut()
 
+copy method name:
+	user.go_last_method()
+    edit.select_word()
+    edit.copy()
+    user.jump_back()
+    
 #Navigation
+go back: user.jump_back()
+go forward: user.jump_forward()
+go inside: user.go_inside()
 go bracket: user.go_bracket()
+go last error: user.go_last_error()
+go error: user.go_next_error()
+go occur last: user.go_last_occurrence()
+go occur [next]: user.go_next_occurrence()
+go method [last]: user.go_last_method()
+go method next: user.go_next_method()
+
+#Refactoring
+to variable: user.extract_variable()
+extract method: user.extract_method()
+move up: user.move_line_up()
+move down: user.move_line_down()

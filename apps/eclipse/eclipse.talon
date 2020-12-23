@@ -139,13 +139,25 @@ refactor this: key(alt-shift-i)
 
 #code navigation
 (go declaration | follow): key(f3)
-go back: user.jump_back()
-go forward: user.jump_forward()
-go inside: user.go_inside() 
+action(user.jump_back): key(alt-left)
+action(user.jump_forward): key(alt-right)
+action(user.go_inside): key(f3)
 action(user.go_bracket): key(ctrl-shift-p)
-# go type: 
-# go usage: 
+action(user.go_last_error): key(ctrl-,)
+action(user.go_next_error): key(ctrl-.)
+action(user.go_last_occurrence): key(ctrl-shift-k)
+action(user.go_next_occurrence): key(ctrl-k)
+action(user.go_last_method): key(ctrl-shift-up)
+action(user.go_next_method): key(ctrl-shift-down)
 
+#refactoring
+action(user.extract_variable): key(alt-shift-l)
+action(user.extract_method): key(alt-shift-m)
+action(user.move_line_up): key(alt-up)
+action(user.move_line_down): key(alt-down)
+
+# select
+action(edit.select_word): key(alt-shift-up)
 # Bookmarks.
 #requires https://marketplace.eclipse.org/content/quick-bookmarks
 go marks: key(alt-end)
