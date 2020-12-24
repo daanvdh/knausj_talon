@@ -4,10 +4,10 @@ find it:
 next one:
     edit.find_next()
 
-go word left:
+word left:
     edit.word_left()
 
-go word right:
+word right:
     edit.word_right()
 
 go left:
