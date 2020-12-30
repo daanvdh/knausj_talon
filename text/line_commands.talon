@@ -16,12 +16,15 @@ comment <number> until <number>:
 clear [line] <number>:
     edit.jump_line(number)
     edit.delete_line()
+    user.jump_back()
 clear <number> until <number>: 
     user.select_range(number_1, number_2)
     edit.delete()
+    user.jump_back()
 copy [line] <number>: 
     user.select_range(number, number)
     edit.copy()
+    user.jump_back()
 copy [line] <number> here: 
     user.select_range(number, number)
     edit.copy()
@@ -30,6 +33,7 @@ copy [line] <number> here:
 copy <number> until <number>: 
     user.select_range(number_1, number_2)
     edit.copy()
+    user.jump_back()
 copy <number> until <number> here:
     user.select_range(number_1, number_2) 
     edit.copy()
@@ -39,9 +43,11 @@ copy <number> until <number> here:
 cut [line] <number>: 
     user.select_range(number, number)
     edit.cut()
+    user.jump_back()
 cut [line] <number> until <number>: 
     user.select_range(number_1, number_2)
     edit.cut()
+    user.jump_back()
 paste <number> until <number>:
   user.select_range(number_1, number_2)
   edit.paste()

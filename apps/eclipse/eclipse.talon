@@ -15,7 +15,9 @@ action(app.tab_previous): key(ctrl-pageup)
 action(app.window_close): key(alt-f4)
 action(app.window_open): key(alt-w n)
 #talon code actions
-action(code.toggle_comment): key(ctrl-7)
+action(code.toggle_comment): 
+	key(ctrl-7)
+	user.jump_back()
 
 #talon edit actions
 action(edit.indent_more): key(tab)
