@@ -13,9 +13,4 @@ class Actions:
 
     def extract_method():
         """extract selected code to a method"""
-
-    def move_line_up():
-        """move the current line up"""
-
-    def move_line_down():
-        """move the current line down"""                
+                

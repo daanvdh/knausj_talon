@@ -232,5 +232,3 @@ go method next: user.go_next_method()
 #Refactoring
 to variable: user.extract_variable()
 extract method: user.extract_method()
-move up: user.move_line_up()
-move down: user.move_line_down()

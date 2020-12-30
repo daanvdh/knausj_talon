@@ -153,8 +153,6 @@ action(user.go_next_method): key(ctrl-shift-down)
 #refactoring
 action(user.extract_variable): key(alt-shift-l)
 action(user.extract_method): key(alt-shift-m)
-action(user.move_line_up): key(alt-up)
-action(user.move_line_down): key(alt-down)
 
 # select
 action(edit.select_word): key(alt-shift-up)
