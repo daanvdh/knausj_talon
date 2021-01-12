@@ -216,8 +216,22 @@ copy method name:
     edit.select_word()
     edit.copy()
     user.jump_back()
+copy class name:
+	key(ctrl-home)
+	user.go_next_method()
+    edit.select_word()
+    edit.copy()
+    user.jump_back()
+    user.jump_back()
+go class :
+	key(ctrl-home)
+	user.go_next_method()
+
     
 #Navigation
+select method:
+	user.go_last_method()
+    edit.select_word()
 go back: user.jump_back()
 go forward: user.jump_forward()
 go inside: user.go_inside()

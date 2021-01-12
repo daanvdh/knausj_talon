@@ -91,6 +91,7 @@ panel variables:
     key(alt-shift-q)
     sleep(200ms) 
     key(v)
+panel back:    key(ctrl-f7)
 # panel switch: 
 # panel terminal: 
 
@@ -139,6 +140,9 @@ imports fix: key(ctrl-shift-o)
 refactor rename: key(alt-shift-r)
 refactor this: key(alt-shift-i)
 
+#search
+find usage: key(ctrl-shift-g)
+
 #code navigation
 (go declaration | follow): key(f3)
 action(user.jump_back): key(alt-left)
@@ -151,6 +155,8 @@ action(user.go_last_occurrence): key(ctrl-shift-k)
 action(user.go_next_occurrence): key(ctrl-k)
 action(user.go_last_method): key(ctrl-shift-up)
 action(user.go_next_method): key(ctrl-shift-down)
+#Requires moreunit pluggin: https://marketplace.eclipse.org/content/moreunit
+go test: key(ctrl-j)
 
 #refactoring
 action(user.extract_variable): key(alt-shift-l)
