@@ -160,6 +160,10 @@ go test: key(ctrl-j)
 
 #refactoring
 action(user.extract_variable): key(alt-shift-l)
+action(user.inline_variable):
+	key(alt-shift-i)
+	sleep(100ms)
+	key(enter)
 action(user.extract_method): key(alt-shift-m)
 
 # select

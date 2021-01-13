@@ -228,4 +228,5 @@ go method next: user.go_next_method()
 
 #Refactoring
 to variable: user.extract_variable()
+in-line variable: user.inline_variable()
 extract method: user.extract_method()

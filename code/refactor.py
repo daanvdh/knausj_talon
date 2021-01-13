@@ -14,3 +14,5 @@ class Actions:
     def extract_method():
         """extract selected code to a method"""
                 
+    def inline_variable():
+        """inline the selected variable"""
