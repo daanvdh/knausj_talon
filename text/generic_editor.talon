@@ -210,23 +210,6 @@ cut word right:
 cut line:
     edit.select_line()
     edit.cut()
-
-copy method name:
-	user.go_last_method()
-    edit.select_word()
-    edit.copy()
-    user.jump_back()
-copy class name:
-	key(ctrl-home)
-	user.go_next_method()
-    edit.select_word()
-    edit.copy()
-    user.jump_back()
-    user.jump_back()
-go class :
-	key(ctrl-home)
-	user.go_next_method()
-
     
 #Navigation
 select method:
@@ -236,8 +219,8 @@ go back: user.jump_back()
 go forward: user.jump_forward()
 go inside: user.go_inside()
 go bracket: user.go_bracket()
-go last error: user.go_last_error()
-go error: user.go_next_error()
+go error last: user.go_last_error()
+go error [next]: user.go_next_error()
 go occur last: user.go_last_occurrence()
 go occur [next]: user.go_next_occurrence()
 go method [last]: user.go_last_method()
