@@ -6,7 +6,6 @@ import time
 from talon import ctrl, ui, Module, Context, actions, clip
 
 mod = Module()
-
 @mod.action_class
 class Actions:
     def jump_back():
@@ -46,6 +45,14 @@ class Actions:
     def after(symbol: str):
         """put the cursor after the given symbol"""
         after(ascii(symbol))
+
+    def backwards_before(symbol: str):
+        """put the cursor before the given symbol"""
+        backwards_before(ascii(symbol))
+        
+    def backwards_after(symbol: str):
+        """put the cursor after the given symbol"""
+        backwards_after(ascii(symbol))        
                         
 def before(symbol):
     with clip.revert():
@@ -66,3 +73,26 @@ def before(symbol):
 
 def after(symbol):
     if before(symbol): actions.edit.right()
+
+def backwards_after(symbol):
+    with clip.revert():
+        actions.edit.extend_line_start()
+        time.sleep(0.1)
+        actions.edit.copy()
+        actions.edit.right()
+        time.sleep(0.1)
+        text_right = clip.get().lower()
+    i = 0
+    length = len(text_right) - 1
+    while i < length and not symbol[1] == text_right[length-i]:
+        i += 1
+    print(i)
+    if symbol[1] == text_right[length-i]:
+        for j in range(0, i):
+            actions.edit.left()
+        return True
+    return False
+    
+def backwards_before(symbol):
+    if backwards_after(symbol): actions.edit.left()
+    
