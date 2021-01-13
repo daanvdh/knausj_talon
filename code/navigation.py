@@ -54,6 +54,58 @@ class Actions:
         """put the cursor after the given symbol"""
         backwards_after(ascii(symbol))        
                         
+    def extend_right(symbol: str):
+        """extend the current selection in the right direction"""
+        extend_right(ascii(symbol))
+
+    def extend_left(symbol: str):
+        """extend the current selection in the left direction"""
+        extend_left(ascii(symbol))        
+
+def extend_right(symbol):
+    with clip.revert():
+        actions.edit.copy()
+        current_selection_length = len(clip.get())
+    with clip.revert():
+        actions.edit.extend_line_end()
+        time.sleep(0.1)
+        actions.edit.copy()
+        actions.edit.left()
+        time.sleep(0.1)
+        text_right = clip.get().lower()
+    i = current_selection_length 
+    while i < len(text_right) - 1 and not symbol[1] == text_right[i]:
+        i += 1
+    if symbol[1] == text_right[i]:
+        for j in range(0, i+1):
+            actions.edit.extend_right()
+    else:
+        for j in range(0, current_selection_length):
+            actions.edit.extend_right()
+
+def extend_left(symbol):
+    with clip.revert():
+        actions.edit.copy()
+        time.sleep(0.1)
+        current_selection_length = len(clip.get())
+    with clip.revert():
+        actions.edit.extend_line_start()
+        time.sleep(0.1)
+        actions.edit.copy()
+        actions.edit.right()
+        time.sleep(0.1)
+        text_right = clip.get().lower()
+    i = current_selection_length
+    length = len(text_right) 
+    while i < length and not symbol[1] == text_right[length-i-1]:
+        i += 1
+    if i < length:
+        for j in range(0, i+1):
+            actions.edit.extend_left()
+    else:
+        for j in range(0, current_selection_length):
+            actions.edit.extend_left()
+        
 def before(symbol):
     with clip.revert():
         actions.edit.extend_line_end()
