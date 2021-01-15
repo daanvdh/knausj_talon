@@ -44,10 +44,20 @@ cut [line] <number>:
     user.select_range(number, number)
     edit.cut()
     user.jump_back()
+cut [line] <number> here: 
+    user.select_range(number, number)
+    edit.cut()
+    user.jump_back()
+	edit.paste()
 cut [line] <number> until <number>: 
     user.select_range(number_1, number_2)
     edit.cut()
     user.jump_back()
+cut [line] <number> until <number> here: 
+    user.select_range(number_1, number_2)
+    edit.cut()
+    user.jump_back()
+    edit.paste()
 paste <number> until <number>:
   user.select_range(number_1, number_2)
   edit.paste()
