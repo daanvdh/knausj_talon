@@ -162,7 +162,7 @@ symbol_key_words = {
     "tilde": "~",
     "bang": "!",
     "dollar": "$",
-    "down score": "_",
+    "_": "_",
     "under score": "_",
     "paren": "(",
     "(": "(",
