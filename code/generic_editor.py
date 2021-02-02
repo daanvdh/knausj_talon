@@ -81,13 +81,18 @@ def getTextLeft():
     return text_right
 
 def getTextRight():
-    with clip.revert():
-        actions.edit.extend_line_end()
-        time.sleep(0.1)
-        actions.edit.copy()
-        actions.edit.left()
-        time.sleep(0.1)
-        text_right = clip.get().lower()
+#    with clip.revert():
+    actions.edit.extend_line_end()
+        #time.sleep(0.1)
+        
+    text_right = actions.edit.selected_text()
+    actions.edit.left()
+        
+        
+        #actions.edit.copy()
+        #actions.edit.left()
+        #time.sleep(0.1)
+        #text_right = clip.get().lower()
     return text_right
 
 def getCurrentSelectionSize():
@@ -100,7 +105,7 @@ def getCurrentSelectionSize():
 def findIndexRight(symbol, occurrence_number, text, start_index):
     i = start_index
     occurrence_count = 0
-    while i < len(text) - 1 and occurrence_count != occurrence_number:
+    while i < len(text) and occurrence_count != occurrence_number:
         if symbol[1] == text[i]:
             occurrence_count += 1
             if occurrence_count != occurrence_number:
