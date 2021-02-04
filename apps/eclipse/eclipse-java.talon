@@ -26,3 +26,8 @@ run method:
     edit.select_word()
     key(alt-shift-x t)
     user.jump_back()	
+debug method:
+	user.go_last_method()
+    edit.select_word()
+    key(alt-shift-d t)
+    user.jump_back()

@@ -37,6 +37,9 @@ tag require:
 tag set:
 	insert("tag(): ")
 #commands for dictating key combos
+key: 
+	"key()"
+	key("left")
 key <user.keys> over: "{keys}"
 key <user.modifiers> over: "{modifiers}"
 #funk commands, consistent with other languages

@@ -44,15 +44,13 @@ action(user.code_null): "null"
 action(user.code_is_null): " is None"
 action(user.code_is_not_null): " is not None"
 action(user.code_state_if): 
-    insert("if () ")
-    key(left)
-    key(left)
+    insert("if () {")
+    key(left left left)
 action(user.code_state_else_if): 
-    insert("else if () ")
-    key(left)
-	key(left)
+    insert("else if () {")
+    key(left left left)
 action(user.code_state_else): 
-	insert("else ")
+	insert("else {")
 	key(enter)
 action(user.code_state_switch):
     insert("switch () ") 
@@ -62,18 +60,16 @@ action(user.code_state_case):
 	insert("case \nbreak;") 
 	edit.up()
 action(user.code_state_for):
-    insert('for () ')
-    key(left)
-    key(left)
+    insert('for () {')
+    key(left left left)
 action(user.code_state_while): 
-    insert("while () ")
-    edit.left()
-	edit.left()
+    insert("while () {")
+    key(left left left)
 action(user.code_type_class): "class "
 action(user.code_private_function):
 	insert("private")
 action(user.code_protected_function):
-    user.code_private_function()
+	insert("protected")
 action(user.code_public_function):
 	insert("public ")
 action(user.code_state_return):
@@ -84,5 +80,16 @@ state break:
     key(enter) 
 state none: "None "
 
+Java doc: 
+	insert("/**")
+    key(enter)
+Show this: 
+    key(f2)
+Fix first:
+    key(f2)
+    key(enter) 
 push:
     edit.line_end()
+print:
+	"System.out.println(\"\");"
+    key(left left left)

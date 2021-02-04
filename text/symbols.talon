@@ -29,14 +29,21 @@ empty escaped string:
     key(left)
     key(left)
 (inside parens | args):
-	insert("()")
-	key(left)
+    text = edit.selected_text()
+    user.paste("({text})")
+    key(left)
 inside (squares | list): 
-	insert("[]") 
-	key(left)
+    text = edit.selected_text()
+    user.paste("[{text}]")
+    key(left)
 inside (bracket | braces): 
-	insert("{}") 
-	key(left)
+    text = edit.selected_text()
+    user.paste("{{{text}}}")
+    key(left)
+inside angles: 
+    text = edit.selected_text()
+    user.paste("<{text}>")
+    key(left)
 inside percent: 
 	insert("%%") 
 	key(left)

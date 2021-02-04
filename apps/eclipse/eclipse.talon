@@ -17,7 +17,6 @@ action(app.window_open): key(alt-w n)
 #talon code actions
 action(code.toggle_comment): 
 	key(ctrl-7)
-	user.jump_back()
 
 #talon edit actions
 action(edit.indent_more): key(tab)
