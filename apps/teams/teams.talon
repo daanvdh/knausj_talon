@@ -23,6 +23,20 @@ action(edit.zoom_in): key(ctrl-=)
 action(edit.zoom_out): key(ctrl--)
 action(edit.zoom_reset): key(ctrl-0)
 
+# settings
+teams headphone:
+	key(ctrl-,)
+	key(down)
+	key(down)
+	key(down)
+	key(enter)
+	key(tab)
+	key(tab)
+	key(enter)
+	key(h)
+	key(enter)
+	key(escape)
+
 # navigations
 open activity: key(ctrl-1)
 open chat: key(ctrl-2)
@@ -45,6 +59,7 @@ send: key(ctrl-enter)
 attach file: key(ctrl-o)
 [start] new line: key(shift-enter)
 reply [to] [thread]: key(r)
+new conversation: key(shift-alt-c)
 
 # Meetings, Calls and Calendar
 accept video call: key(ctrl-shift-a)
@@ -53,7 +68,7 @@ decline call: key(ctrl-shift-d)
 start audio call: key(ctrl-shift-c)
 start video call: key(ctrl-shift-u)
 toggle mute: key(ctrl-shift-m)
-starch screen share session: key(ctrl-shift-e)
+share screen: key(ctrl-shift-e)
 toggle video: key(ctrl-shift-o)
 [go] [to] sharing toolbar: key(ctrl-shift-space)
 decline screen share: key(ctrl-shift-d)

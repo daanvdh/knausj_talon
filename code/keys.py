@@ -215,9 +215,10 @@ simple_keys = [
     "tab",
 ]
 
-alternate_keys = {
+alternate_keys = { 
     "back": "backspace",
     "delete": "delete",
+    "tap": "tab",
     #'junk': 'backspace',
 }
 # mac apparently doesn't have the menu key.

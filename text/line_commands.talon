@@ -7,12 +7,16 @@ go <number>: edit.jump_line(number)
 go <number> end: 
     edit.jump_line(number)
     edit.line_end()
+comment:
+    code.toggle_comment()
 comment [line] <number>:
     user.select_range(number, number)
     code.toggle_comment()
+	user.jump_back()
 comment <number> until <number>: 
     user.select_range(number_1, number_2)
     code.toggle_comment()
+	user.jump_back()
 clear [line] <number>:
     edit.jump_line(number)
     edit.delete_line()

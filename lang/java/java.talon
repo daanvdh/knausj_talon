@@ -91,5 +91,5 @@ Fix first:
 push:
     edit.line_end()
 print:
-	"System.out.println(\"\");"
+	user.paste("System.out.println(\"\");")
     key(left left left)
