@@ -140,8 +140,8 @@ clear way down:
     edit.delete()
 
 clear all:
-	edit.select_all()    
-	edit.delete()
+    edit.select_all()
+    edit.delete()
 
 #copy commands
 copy all:
@@ -178,7 +178,7 @@ copy line:
     edit.copy()
 
 #cut commands
-cut everything:
+cut all:
     edit.select_all()
     edit.cut()
 #to do: do we want these variants
