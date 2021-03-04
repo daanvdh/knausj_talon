@@ -11,6 +11,7 @@ righty:
 	mouse_click(1)
 	# close the mouse grid if open
 	user.grid_close()
+	user.mouse_cancel_zoom_mouse()
 
 midclick: 
 	mouse_click(2)

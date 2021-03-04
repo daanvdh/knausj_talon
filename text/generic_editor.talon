@@ -54,16 +54,16 @@ select line:
 select all:
     edit.select_all()
 
-select left:
+#select left:
     edit.extend_left()
 
-select right:
+#select right:
     edit.extend_right()
 
-select up:
+#select up:
     edit.extend_line_up()
 
-select down:
+#select down:
     edit.extend_line_down()
 
 select word:

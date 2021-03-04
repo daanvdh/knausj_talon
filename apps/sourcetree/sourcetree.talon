@@ -2,4 +2,4 @@ os: windows
 and app.name: SourceTree.exe
 -
 
-add file: key(ctrl-shift-+)
+stage selected: key(ctrl-shift-+)
