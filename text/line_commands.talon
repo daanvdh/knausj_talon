@@ -29,19 +29,25 @@ copy [line] <number>:
     user.select_range(number, number)
     edit.copy()
     user.jump_back()
-copy [line] <number> here: 
-    user.select_range(number, number)
-    edit.copy()
-    user.jump_back()
-    edit.paste()
-copy <number> until <number>: 
+copy <number> until <number>:
     user.select_range(number_1, number_2)
     edit.copy()
     user.jump_back()
-copy <number> until <number> here:
+use <number>:
+    user.select_range(number, number)
+    edit.copy()
+    user.jump_back()
+	key(enter)
+    edit.extend_line_start()
+    edit.delete() 
+    edit.paste()
+use <number> until <number>:
     user.select_range(number_1, number_2) 
     edit.copy()
     user.jump_back()
+	key(enter)
+    edit.extend_line_start()
+    edit.delete()
     edit.paste()
     
 cut [line] <number>: 
