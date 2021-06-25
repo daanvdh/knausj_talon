@@ -2,7 +2,7 @@
 # the shortcuts below our based half of the bill in short cut menu, but the
 # link above has significantly more that could so be added
 
-os: linux
+#os: linux
 tag: browser
 win.title: /Outlook/
 -
@@ -59,7 +59,7 @@ new folder: key(shift-e)
 mark [this] [(item|message)] as read: key(q)
 mark [this] [(item|message)] as unread: key(u)
 flag [this] [(item|message)]: key(insert)
-archive: key(e)
+(archive|floop): key(e)
 mark [this] [message] [as] junk: key(j)
 moved to [a] folder: key(v)
 categorize [this] message: key(c)

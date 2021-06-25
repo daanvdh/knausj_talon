@@ -31,7 +31,7 @@ ctx.lists["self.navigation_action"] = {
     "move": "GO",
     "extend": "EXTEND",
     "select": "SELECT",
-    "clear": "DELETE",
+    "whipe": "DELETE",
     "cut": "CUT",
     "copy": "COPY",
 }

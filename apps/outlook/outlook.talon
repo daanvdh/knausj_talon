@@ -1,6 +1,7 @@
-app: Outlook
+app.exe: OUTLOOK.EXE
+#app: Outlook
 -
-archive: key(alt h o 1)
+archive: key(alt h o)
 new e-mail: key(ctrl-n)
 calendar: key(ctrl-2)
 inbox: key(ctrl-1)

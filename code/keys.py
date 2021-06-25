@@ -165,6 +165,7 @@ symbol_key_words = {
     "minus": "-",
     "dash": "-",
     "equals": "=",
+    "equift": " = ",
     "plus": "+",
     "tilde": "~",
     "bang": "!",

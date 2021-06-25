@@ -40,8 +40,17 @@ tag set:
 key: 
 	"key()"
 	key("left")
-key <user.keys> over: "{keys}"
-key <user.modifiers> over: "{modifiers}"
+key <user.keys> [over]: "{keys}"
+key <user.modifiers> [over]: "{modifiers}"
+sleep:
+	insert("sleep(100ms)")
+	key("left left left")
+	edit.extend_left()
+	edit.extend_left()
+	edit.extend_left()
+insert:
+	insert("insert(\"\")")
+	key("left left")
 #funk commands, consistent with other languages
 toggle funk: user.code_toggle_functions()
 funk <user.code_functions>:

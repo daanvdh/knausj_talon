@@ -92,3 +92,10 @@ push:
 print:
 	user.paste("System.out.println(\"\");")
     key(left left left)
+print this:
+	a=edit.selected_text()
+	key(end)
+	key(enter)
+	user.paste("System.out.println(\"{a}: \" + {a});")
+to do:
+	insert("// TODO: ")
