@@ -51,6 +51,9 @@ sleep:
 insert:
 	insert("insert(\"\")")
 	key("left left")
+parrot:
+	insert("parrot()")
+	key("left")
 #funk commands, consistent with other languages
 toggle funk: user.code_toggle_functions()
 funk <user.code_functions>:

@@ -28,8 +28,8 @@ select last [message]: key(and)
 open [this] message: key(o)
 open [this] message [in] [a] new window: key(shift-enter)
 close [this] message: key(esc)
-[open] [the] next (item|message): key(ctrl-.)
-[open] [the] (prev|previous) item: key(ctrl-,)
+next (item|message): key(ctrl-.)
+last (item|message): key(ctrl-,)
 next reading [pane] (item|message): key(.)
 (prev|previous) [pane] (item|message): key(,)
 (expand|collapse) [conversation]: key(x)
@@ -42,10 +42,10 @@ go [to] to do: key(ctrl-shift-4)
 go [to] inbox:
     key(g)
     key(i)
-go to drafts:
+go [to] drafts:
     key(g)
     key(d)
-go to sent:
+go [to] sent:
     key(g)
     key(s)
 search [email]: key(alt-q)

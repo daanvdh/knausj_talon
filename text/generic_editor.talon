@@ -66,14 +66,14 @@ select all:
 #select down:
     edit.extend_line_down()
 
-#select word:
-#    edit.select_word()
+select word:
+    edit.select_word()
 
-#select word left:
-#    edit.extend_word_left()
+select word left:
+    edit.extend_word_left()
 
-#select word right:
-#    edit.extend_word_right()
+select word right:
+    edit.extend_word_right()
 
 select way left:
     edit.extend_line_start()
